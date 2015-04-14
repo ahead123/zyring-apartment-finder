@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the zyringApp
  */
-var zyringApp = angular.module('zyringApp')
+angular.module('zyringApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
@@ -41,5 +41,6 @@ var zyringApp = angular.module('zyringApp')
 			image : "http://goo.gl/ngqBfj"
 		}
 	];
-  });
+	
+});
 

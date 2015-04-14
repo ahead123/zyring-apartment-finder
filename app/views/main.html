@@ -1,19 +1,14 @@
-<img class="img-responsive" width="100%" src="https://s3-us-west-2.amazonaws.com/zyring-public-image/logo.png" >
-<h3 style="text-align: center">This is the your main html file</h3>
-
-<!-- <div class="col-md-6" ng-controller="MainCtrl" ng-repeat="city in cities">
-	<h1>{{ city.city }}</h1>
-	<img class="thumbnail full-height" ng-src="{{ city.image }}" />
-</div> -->
-
+<div class="page-header ">
+	<h2 class="text-center text-danger">Where do you want to look for apartments?</h2>
+</div>
 <div class="row" ng-controller="MainCtrl">
   <div ng-repeat="city in cities" class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <img ng-src="{{ city.image }}" class="half-height"/>
       <div class="caption">
-        <h3>{{ city.city }}</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Explore!</a></p>
+        <h3>{{ city.city }}, Washington</h3>
+        <!-- <p>...</p> -->
+        <p><a ng-href="#/apartments/{{city.city}}" class="btn btn-primary" role="button">Search in {{ city.city }}</a></p>
       </div>
     </div>
   </div>

@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-var zyringApp = angular
-  .module('zyringApp', [
+angular.module('zyringApp', [
     'ngAnimate',
     'ngResource',
     'ngRoute',
@@ -24,6 +23,10 @@ var zyringApp = angular
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/apartments/:cityName', {
+        templateUrl: 'views/apartment.html',
+        controller: 'ApartmentCtrl'
       })
       .otherwise({
         redirectTo: '/'
