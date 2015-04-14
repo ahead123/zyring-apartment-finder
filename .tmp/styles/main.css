@@ -1,0 +1,11 @@
+img.full-height {
+	min-height: 360px;
+	max-height: 360px;
+	width: 100%;
+}
+
+img.half-height {
+	min-height: 233px;
+	max-height: 233px;
+	width: 100%;
+}
