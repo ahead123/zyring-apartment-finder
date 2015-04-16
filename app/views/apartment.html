@@ -1,0 +1,21 @@
+<div class="col-md-12" ng-controller="ApartmentCtrl">
+	<div class="page-header">
+		<h2 class="text-center text-danger">Apartment Finder Results For <span id="dynamicCity"></span></h2>
+	</div>
+	<div class="row" ng-controller="MainCtrl">
+	  <div ng-repeat="test in cityInfo" class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+	      <img ng-src="{{ test.thumbnail }}" class="half-height"/>
+	      <div class="caption">
+	        <h3 class="text-danger">{{ test.title | limitTo: 15 }}</h3><strong><small class="text-info">{{ test.street }}, {{ test.city }}, {{ test.region }}, {{test.zip}}</small></strong>
+	        <!-- <p>...</p> -->
+	        <ul class="">
+	        	<li><strong>Features:</strong> {{ test.features | limitTo: 2 }}</li>
+	        	<li><strong>Price:</strong> {{ test.price }}</li>
+	        	<li><strong>Contact:</strong> {{ test.contact }}</li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
