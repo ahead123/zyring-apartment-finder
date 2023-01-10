@@ -2,7 +2,7 @@
   "name": "zyring",
   "version": "0.0.0",
   "dependencies": {
-    "socket.io-client": "^1.3.4"
+    "socket.io-client": "^2.1.0"
   },
   "repository": {},
   "devDependencies": {
